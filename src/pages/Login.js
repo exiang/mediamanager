@@ -35,6 +35,9 @@ export default function Login({ setToken }){
             //setToken(jsonLogin.content.accessToken);
             setToken(jsonLogin.content);
         }
+        else{
+            alert('Wrong credential. Please try again');
+        }
         
     }
     
