@@ -35,12 +35,15 @@ export default function Login({ setToken }){
             //setToken(jsonLogin.content.accessToken);
             setToken(jsonLogin.content);
         }
+        else{
+            alert('Wrong credential. Please try again');
+        }
         
     }
     
     return (
         <div className="App"><div className="content bg-white sm:bg-gray-100 dark:bg-gray-800 sm:dark:bg-gray-800 dark:text-gray-400">
-        <div class="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center h-screen">
             <div className="sm:grid sm:grid-flow-col sm:grid-cols-2 mx-auto max-w-2xl p-5 sm:bg-white rounded-[30px] m-5 dark:sm:bg-gray-700">
                 <div className="p-5 pl-9">
                     <div className="mb-12 h-[25px] sm:h-[20px] relative">
