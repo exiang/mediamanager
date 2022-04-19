@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Electron
+`npm run dev`
+
+### Demo login
+  * username: John
+  * password: password123
+
+### Web
+`npm run start` (no longer supported now)
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,15 +81,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-### Demo login
-  * username: John
-  * password: password123
-
-### Web
-`npm run start`
-
-### Electron
-`npm run dev`
-
