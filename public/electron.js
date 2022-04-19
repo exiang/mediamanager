@@ -1,6 +1,8 @@
 const path = require('path');
 
 const { app, BrowserWindow } = require('electron');
+const electronLocalshortcut = require('electron-localshortcut')
+
 const isDev = require('electron-is-dev');
 
 function createWindow() {
@@ -42,6 +44,15 @@ app.on('window-all-closed', () => {
 
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
+    require('electron-disable-file-drop');
     createWindow();
   }
 });
+
+app.on('focus', (event) => {
+    electronLocalshortcut.register(win, ['CommandOrControl+R','CommandOrControl+Shift+R', 'F5'], () => {})
+})
+
+app.on('blur', (event) => {
+    electronLocalshortcut.unregisterAll(win)
+})
